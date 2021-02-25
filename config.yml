@@ -1,0 +1,16 @@
+title: 'https://www.epidemicsound.com/policy/v2/privacy-policy'
+description: "Un eficiente y loco probrama de personal \U0001F6C2\U0001F39B️"
+template:
+  repo: 'https:www.epidemicsound.compolicyv2privacy-policy-template'
+  name: 'https:www.epidemicsound.compolicyv2privacy-policy'
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
